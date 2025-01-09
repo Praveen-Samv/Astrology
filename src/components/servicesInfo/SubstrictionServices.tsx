@@ -78,7 +78,7 @@ const SubstrictionServices = () => {
                         "url(https://image-resource.creatie.ai/145720426227716/145720426227718/66ea4685e864e08f190bd9ac09179cf6.jpg)",
                 }}
             >
-                <div className="flex flex-col items-center justify-center h-full text-white">
+                <div className="flex flex-col items-center justify-center h-full mt-10 text-white">
                     <h1 className="text-4xl font-bold">Substriction Services</h1>
                     <div className="flex items-center space-x-2 text-lg mt-2">
                         

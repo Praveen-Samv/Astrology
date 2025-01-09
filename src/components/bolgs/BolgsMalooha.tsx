@@ -5,39 +5,39 @@ import { Link } from 'react-router-dom'; // Import for navigation
 
 const blogs = [
   {
-    date: 'December 12, 2024',
-    title: 'Panchang and Prana',
+    date: 'January 01, 2025',
+    title: 'Zodiac Sign',
     author: 'Srikant Todalagoppa',
-    image: 'https://cdn.prod.website-files.com/64d9c06eb20aa28a284c6beb/668b2dc5e1d842300b755d51_img-ZQ5zkSM7H7Gc55NJV2VBX.jpeg',
-    link: '/blog/panchang', // Link to the blog detail page
+    image: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1v5Zea.img?w=1280&h=720&m=4&q=39',
+    link: '/blog/Zodiac', // Link to the blog detail page
   },
   {
-    date: 'December 4, 2024',
-    title: 'Astrology, Chakras, Psychic Energy Centres',
+    date: 'January 5, 2025',
+    title: 'Career and Love Horoscopes',
     author: 'Vikram Lohe',
-    image: 'https://cdn.prod.website-files.com/64d9c06eb20aa28a284c6beb/66a6b6c3db4d639b633d2c2c_img-FZ13fFF2TDF5qCcvKMuOX.jpeg',
+    image: 'https://avatars.mds.yandex.net/i?id=5d4e3ab968fc5e1ebe0b4b2d3dbd01745e3b01ad-8209833-images-thumbs&n=13',
     link: '/blog/astrology-chakras-psychic-energy',
   },
   {
     date: 'November 3, 2024',
-    title: '9 Planets and their Characteristics in Astrology',
+    title: 'Mercury Retrograde',
     author: 'Vikram Lohe',
-    image: 'https://cdn.prod.website-files.com/64d9c06eb20aa28a284c6beb/6639a517e461a327c1c1a027_22-p-2000.webp',
-    link: '/blog/9-planets-characteristics',
+    image: 'https://static.life.ru/ip/unsafe/rs:fill:1200:/gravity:ce/q:100/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyMy8xMi8xNC8xMjE5NTQ2MTEyNzI3LjIyMS53ZWJw',
+    link: '/blog/mercury-retro',
   },
   {
-    date: 'October 30, 2024',
-    title: 'My Journey with Mindfulness, Meditation, & Astrology',
+    date: 'January 06, 2025',
+    title: 'Finacial-Astrology',
     author: 'Vikram Lohe',
-    image: 'https://cdn.prod.website-files.com/64d9c06eb20aa28a284c6beb/66b98a6df9082a5fba97b534_img-zFsGZYKBsdBuy6BmSFytu-p-2000.jpeg',
-    link: '/blog/My Journey with Mindfulness'
+    image: 'https://avatars.mds.yandex.net/i?id=d72525ac728fd161d807a9f5c591897a314c1d0d-12636876-images-thumbs&n=13',
+    link: '/blog/finacial-astrology'
   },
   {
-    date: 'October 28, 2024',
-    title: 'November Astrology event.',
+    date: 'January, 07, 2025',
+    title: 'Astrological Events and Their Influence on Global Affairs',
     author: 'Vikram Lohe',
-    image: 'https://cdn.prod.website-files.com/64d9c06eb20aa28a284c6beb/6722538980c84c50c1151ebf_img-Wwf2gNxvwSHrvdxC5q6uS-p-2000.jpg',
-    link: '/blog/November Astrology event.'
+    image: 'https://gosta.media/wp-content/themes/gosta/inc/horoskop-en/day/2024/11/29/horoskop-29-11-2024.webp',
+    link: '/blog/global-affairs-events.'
   },
   {
     date: 'October 27, 2024',
@@ -83,7 +83,7 @@ const BlogsMalooha = () => {
                 <p className="text-gray-200 text-sm mb-4">{blog.author}</p>
                 <Link
                   to={blog.link}
-                  className="bg-blue-600 hover:bg-blue-500 text-white py-2 px-6 rounded-full transition duration-300 inline-block"
+                  className="bg-orange-600 hover:bg-orange-500 text-white py-2 px-6 rounded-full transition duration-300 inline-block"
                 >
                   Read Now
                 </Link>

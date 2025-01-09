@@ -17,9 +17,9 @@ const FreeServices = () => {
                         "url(https://image-resource.creatie.ai/145720426227716/145720426227718/66ea4685e864e08f190bd9ac09179cf6.jpg)",
                 }}
             >
-                <div className="flex flex-col items-center justify-center h-full text-white">
+                <div className="flex flex-col items-center justify-center h-full text-white mt-10">
                     <h1 className="text-4xl font-bold">Free Services</h1>
-                    <div className="flex items-center space-x-2 text-lg mt-2">
+                    <div className="flex items-center space-x-2 text-lg ">
                         
                     </div>
                 </div>

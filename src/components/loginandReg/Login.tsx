@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const LoginPage: React.FC = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 mt-12">
       <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
         {/* Logo */}
         <div className="flex justify-center mb-8">
