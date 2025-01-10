@@ -11,7 +11,26 @@ import ClienSuccessTitle from "../HomePages/ClientSuccesTitle";
 import InfoAstro from "../HomePages/InfoAstro";
 import Hero from "../HomePages/Hero";
 
+// import supabase from "../config/supabaseClient";
+// import { useNavigate } from 'react-router-dom';
+// import React, {useEffect} from 'react';
+
+
 function Home() {
+
+  // const navigate = useNavigate();
+  // useEffect(() => {
+  //   // Check if the user is logged in
+  //   const checkUser = async () => {
+  //     const { data: { user } } = await supabase.auth.getUser();
+  //     if (!user) {
+  //       navigate('/login'); // Redirect to login if not authenticated
+  //     }
+  //   };
+
+  //   checkUser();
+  // }, [navigate]);
+
     return (
         <div className="flex flex-col space-y-12">
         <Hero />
@@ -32,4 +51,8 @@ function Home() {
   }
   
   export default Home;
+
+// function useEffect(arg0: () => void, arg1: any[]) {
+//   throw new Error("Function not implemented.");
+// }
   

@@ -7,7 +7,7 @@ const CarrerInfo: React.FC = () => {
     <div className="min-h-screen bg-white text-gray-800 p-8 mt-24">
       {/* Title Section */}
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold text-purple-900 mb-4">
+        <h1 className="text-5xl font-bold text-orange-600 mb-4">
           Career and Love Horoscopes: What the Stars Say
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">

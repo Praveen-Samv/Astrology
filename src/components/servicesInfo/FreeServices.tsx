@@ -8,7 +8,7 @@ import Footer from "../HomePages/Footer";
 
 const FreeServices = () => {
     return (
-        <div className="w-full bg-white">
+        <div className="w-full bg-white fixed">
             {/* Breadcrumb */}
             <div
                 className="w-full h-52 bg-cover bg-center"

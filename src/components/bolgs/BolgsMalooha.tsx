@@ -14,12 +14,12 @@ const blogs = [
   {
     date: 'January 5, 2025',
     title: 'Career and Love Horoscopes',
-    author: 'Vikram Lohe',
+    author: 'Gowtham',
     image: 'https://avatars.mds.yandex.net/i?id=5d4e3ab968fc5e1ebe0b4b2d3dbd01745e3b01ad-8209833-images-thumbs&n=13',
     link: '/blog/astrology-chakras-psychic-energy',
   },
   {
-    date: 'November 3, 2024',
+    date: 'Javuary 06, 2025',
     title: 'Mercury Retrograde',
     author: 'Vikram Lohe',
     image: 'https://static.life.ru/ip/unsafe/rs:fill:1200:/gravity:ce/q:100/czM6Ly9saWZlLXN0YXRpYy9wdWJsaWNhdGlvbnMvMjAyMy8xMi8xNC8xMjE5NTQ2MTEyNzI3LjIyMS53ZWJw',
@@ -28,7 +28,7 @@ const blogs = [
   {
     date: 'January 06, 2025',
     title: 'Finacial-Astrology',
-    author: 'Vikram Lohe',
+    author: 'Goutham Krishna',
     image: 'https://avatars.mds.yandex.net/i?id=d72525ac728fd161d807a9f5c591897a314c1d0d-12636876-images-thumbs&n=13',
     link: '/blog/finacial-astrology'
   },
@@ -40,18 +40,18 @@ const blogs = [
     link: '/blog/global-affairs-events.'
   },
   {
-    date: 'October 27, 2024',
-    title: 'My Journey with Mindfulness, Meditation, & Astrology',
-    author: 'Vikram Lohe',
-    image: 'https://cdn.prod.website-files.com/64d9c06eb20aa28a284c6beb/672309e6778d2a69c3af4efc_img-SIXP7LVudMLvQllB4FYjf-p-2000.jpeg',
-    link: '/blog/3 Pillars for Scalable Astrology Platform',
+    date: 'January 08, 2025',
+    title: 'Unlocking the Secrets of Astrology',
+    author: 'Goutham Krishna',
+    image: 'https://i.ytimg.com/vi/WV6EMOK8sG4/maxresdefault.jpg',
+    link: '/blog/astrology-educational',
   },
   {
-    date: 'October 21, 2024',
-    title: '3 Pillars for Scalable Astrology Platform',
-    author: 'Vikram Lohe',
-    image: 'https://cdn.prod.website-files.com/64d9c06eb20aa28a284c6beb/65aa59d511362a31dc5f012b_3%20Pillars%20for%20Scalable%20Astrology%20Platform%201-p-2000.png',
-    link: '/blog/3 Pillars for Scalable Astrology Platform',
+    date: 'Janyary 9, 2025',
+    title: 'Major Astrological Shifts in 2025',
+    author: 'Praveen Kumar',
+    image: 'https://static1.smi2.net/img/1200x630/7917851.jpeg',
+    link: '/blog/astrology-shift-2025',
   },
   
   // Add the rest of the blogs with their respective links...
@@ -59,7 +59,7 @@ const blogs = [
 
 const BlogsMalooha = () => {
   return (
-    <div className="bg-white text-black p-10 -z-10">
+    <div className="bg-white text-black p-10 -z-10 mt-20">
       <h1 className="text-4xl font-bold mb-8">Explore Our Blogs</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs.map((blog, index) => (

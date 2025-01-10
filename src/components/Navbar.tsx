@@ -345,82 +345,251 @@
 
 
 
-import React from "react";
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// const Navbar: React.FC = () => {
+//   return (
+//     <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-200">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="flex justify-between items-center h-20">
+//           {/* Left Section: Logo */}
+//           <div className="flex-shrink-0">
+//             <Link to="/">
+//               <img
+//                 src="https://image-resource.creatie.ai/146256977394649/146256977394651/699ab2aa049ff7258c72bcdb4a392392.png"
+//                 className="h-10 w-auto"
+//                 alt="CorpAstro Logo"
+//               />
+//             </Link>
+//           </div>
+
+//           {/* Center Section: Navigation */}
+//           <div className="hidden md:flex items-center justify-center space-x-4">
+//             <Link
+//               to="/numerology"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Free Tools
+//             </Link>
+
+//             <Link
+//               to="/subscription"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Services
+//             </Link>
+
+//             <Link
+//               to="/premium"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Consultations
+//             </Link>
+
+//             <Link
+//               to="/blog"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Blog
+//             </Link>
+
+//             <Link
+//               to="/about"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               About Us
+//             </Link>
+
+//             <Link
+//               to="/contact"
+//               className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+//             >
+//               Contact Us
+//             </Link>
+//           </div>
+
+//           {/* Right Section: Auth Buttons */}
+//           <div className="hidden md:flex items-center space-x-4">
+//             <Link
+//               to="/login"
+//               className="text-sm font-medium text-orange-600 hover:text-orange-500"
+//             >
+//               Login
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+
+
+
+
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import supabase from "./config/supabaseClient"; // Import the Supabase client
 
 const Navbar: React.FC = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false); // State for modal visibility
+
+  // Check if the user is logged in
+  useEffect(() => {
+    const checkUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        setIsLoggedIn(true); // User is logged in
+      } else {
+        setIsLoggedIn(false); // User is not logged in
+      }
+    };
+
+    checkUser();
+  }, []);
+
+  // Handle Free Tools click
+  const handleFreeToolsClick = () => {
+    if (!isLoggedIn) {
+      setShowLoginModal(true); // Show login modal if not logged in
+    }
+  };
+
+  // Close the modal
+  const closeModal = () => {
+    setShowLoginModal(false);
+  };
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Left Section: Logo */}
-          <div className="flex-shrink-0">
-            <Link to="/">
-              <img
-                src="https://image-resource.creatie.ai/146256977394649/146256977394651/699ab2aa049ff7258c72bcdb4a392392.png"
-                className="h-10 w-auto"
-                alt="CorpAstro Logo"
-              />
-            </Link>
-          </div>
+    <>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            {/* Left Section: Logo */}
+            <div className="flex-shrink-0">
+              <Link to="/">
+                <img
+                  src="https://image-resource.creatie.ai/146256977394649/146256977394651/699ab2aa049ff7258c72bcdb4a392392.png"
+                  className="h-10 w-auto"
+                  alt="CorpAstro Logo"
+                />
+              </Link>
+            </div>
 
-          {/* Center Section: Navigation */}
-          <div className="hidden md:flex items-center justify-center space-x-4">
-            <Link
-              to="/numerology"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Free Tools
-            </Link>
+            {/* Center Section: Navigation */}
+            <div className="hidden md:flex items-center justify-center space-x-4">
+              {/* Free Tools Link (Conditional Rendering) */}
+              {isLoggedIn ? (
+                <Link
+                  to="/numerology"
+                  className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+                >
+                  Free Tools
+                </Link>
+              ) : (
+                <span
+                  onClick={handleFreeToolsClick}
+                  className="px-4 py-2 rounded-full text-sm font-medium text-gray-400 cursor-pointer hover:bg-gray-100 transition-colors"
+                  title="Login to access Free Tools"
+                >
+                  Free Tools
+                </span>
+              )}
 
-            <Link
-              to="/subscription"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Services
-            </Link>
+              <Link
+                to="/subscription"
+                className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+              >
+                Services
+              </Link>
 
-            <Link
-              to="/premium"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Consultations
-            </Link>
+              <Link
+                to="/premium"
+                className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+              >
+                Consultations
+              </Link>
 
-            <Link
-              to="/blog"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Blog
-            </Link>
+              <Link
+                to="/blog"
+                className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+              >
+                Blog
+              </Link>
 
-            <Link
-              to="/about"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              About Us
-            </Link>
+              <Link
+                to="/about"
+                className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+              >
+                About Us
+              </Link>
 
-            <Link
-              to="/contact"
-              className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
-            >
-              Contact Us
-            </Link>
-          </div>
+              <Link
+                to="/contact"
+                className="px-4 py-2 rounded-full text-sm font-medium text-gray-900 hover:bg-orange-400 transition-colors"
+              >
+                Contact Us
+              </Link>
+            </div>
 
-          {/* Right Section: Auth Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link
-              to="/login"
-              className="text-sm font-medium text-orange-600 hover:text-orange-500"
-            >
-              Login
-            </Link>
+            {/* Right Section: Auth Buttons */}
+            <div className="hidden md:flex items-center space-x-4">
+              {isLoggedIn ? (
+                <button
+                  onClick={async () => {
+                    await supabase.auth.signOut(); // Log out the user
+                    setIsLoggedIn(false); // Update login state
+                  }}
+                  className="text-sm font-medium text-orange-600 hover:text-orange-500"
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link
+                  to="/login"
+                  className="text-sm font-medium text-orange-600 hover:text-orange-500"
+                >
+                  Login
+                </Link>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      {/* Login Modal */}
+      {showLoginModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg p-6 w-96 shadow-lg">
+            <h2 className="text-xl font-semibold mb-4">Login Required</h2>
+            <p className="text-gray-600 mb-6">
+              Please log in with your email to access Free Tools.
+            </p>
+            <div className="flex justify-end space-x-4">
+              <button
+                onClick={closeModal}
+                className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                Cancel
+              </button>
+              <Link
+                to="/login"
+                className="px-4 py-2 text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 rounded-lg transition-colors"
+              >
+                Go to Login
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

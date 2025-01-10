@@ -72,9 +72,9 @@ const GlobalAffairs: React.FC = () => {
         <p className="text-lg text-gray-600 mb-6">
           Explore how astrology can provide insights into global trends and events. Get personalized readings and in-depth analyses tailored to your interests.
         </p>
-        <button className="bg-purple-900 text-white px-6 py-3 rounded-lg hover:bg-purple-800 transition-colors">
+        {/* <button className="bg-purple-900 text-white px-6 py-3 rounded-lg hover:bg-purple-800 transition-colors">
           Explore Astrology Readings
-        </button>
+        </button> */}
       </div>
 
       {/* Footer */}

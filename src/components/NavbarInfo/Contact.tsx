@@ -280,7 +280,7 @@ const Contact: React.FC = () => {
         }}
       >
         <div className="flex flex-col items-center justify-center h-full text-white">
-          <h1 className="text-4xl font-bold">Contact US</h1>
+          <h1 className="text-4xl font-bold mt-16">Contact US</h1>
         </div>
       </div>
 

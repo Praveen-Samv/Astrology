@@ -13,7 +13,7 @@ const About = () => {
       <div className="w-full h-48 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('https://image-resource.creatie.ai/145721118291381/145721118291383/66ea4685e864e08f190bd9ac09179cf6.jpg')" }}>
         <div className="text-white text-xl md:text-2xl font-medium flex items-center gap-4">
           
-          <span className="text-4xl">About US</span>
+          <span className="text-4xl mt-16">About US</span>
         </div>
       </div>
 

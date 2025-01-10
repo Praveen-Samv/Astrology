@@ -67,10 +67,10 @@ const SolarEclipse: React.FC = () => {
   const eclipseImageUrl = 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1v5Zea.img?w=1280&h=720&m=4&q=39'; // Replace with your image URL
 
   return (
-    <div className="min-h-screen bg-white text-gray-800 p-8">
+    <div className="min-h-screen bg-white text-gray-800 p-8 mt-24">
       {/* Title Section */}
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold text-purple-900 mb-4">
+        <h1 className="text-5xl font-bold text-orange-600 mb-4">
           Solar Eclipse 2023: How It Will Transform Your Zodiac Sign
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -79,7 +79,7 @@ const SolarEclipse: React.FC = () => {
       </div>
 
       {/* Centered Image */}
-      <div className="flex justify-center mb-12">
+      <div className="flex justify-center mb-12 hover:scale-105 transition-transform duration-300">
         <img
           src={eclipseImageUrl}
           alt="Solar Eclipse"
