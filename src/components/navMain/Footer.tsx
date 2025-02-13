@@ -5,7 +5,7 @@ const Footer = () => {
         <div
             className="relative z-10 shadow-md"
             style={{
-                backgroundImage: `url()`,
+                backgroundImage: `url('https://i.ytimg.com/vi/BowAJ4J4wgw/maxresdefault.jpg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
