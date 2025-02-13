@@ -44,7 +44,7 @@ const TimelineNode: React.FC<TimelineItem & { isSelected: boolean; onClick: () =
     year,
     title,
     location,
-    details,
+   
     isSelected,
     onClick,
 }) => {
