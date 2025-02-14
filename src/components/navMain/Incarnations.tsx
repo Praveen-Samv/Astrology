@@ -497,6 +497,146 @@
 
 
 
+// import React from "react";
+// import Timeline from "../others/TimeLines";
+// import Footer from "./Footer";
+
+// const incarnations = [
+//     {
+//         name: "Sripada Srivallabha (1320 AD – 1350 AD)",
+//         birthplace: "Pithapuram, Andhra Pradesh",
+//         era: "Early 14th century",
+//         message: "Detachment from material desires, unwavering devotion, and selfless service to others.",
+//         legacy: "Pithapuram remains a revered spiritual hub, and his life is immortalized in the 'Sripada Srivallabha Charitaamrutam'.",
+//         image: "https://i.ytimg.com/vi/rAn2a__7JqI/maxresdefault.jpg"
+//     },
+//     {
+//         name: "Narasimha Saraswati (1378 AD – 1458 AD)",
+//         birthplace: "Karanja, Maharashtra",
+//         era: "Late 14th to mid-15th century",
+//         message: "Faith in the Guru, adherence to Vedic traditions, and disciplined spiritual practices.",
+//         legacy: "His life and teachings are chronicled in 'Shri Guru Charitra', inspiring millions.",
+//         image: "https://yt3.googleusercontent.com/ytc/AOPolaRa1q7QMN7V6p-P2s-mrCwlXIcASDhOf7MtSyVrxg=s900-c-k-c0x00ffffff-no-rj"
+//     },
+//     {
+//         name: "Swami Samarth (19th Century)",
+//         birthplace: "Resided in Akkalkot, Maharashtra",
+//         era: "19th century",
+//         message: "Live simply, stay detached from materialism, and maintain faith in divine grace.",
+//         legacy: "Akkalkot has become a major pilgrimage site, where devotees flock to experience his presence and teachings.",
+//         image: "https://yt3.googleusercontent.com/pvTApAcwpSbvskIeTZZB4zo0ytOdVgO-2VzmpaHj3tp6egw52mrX-9kalkW8NU6fzD3SXUI-BXI=s900-c-k-c0x00ffffff-no-rj"
+//     },
+//     {
+//         name: "Manik Prabhu (1817 AD – 1865 AD)",
+//         birthplace: "Ladwanti, Maharashtra",
+//         era: "Early 19th century",
+//         message: "Equality, universal love, and selfless service to mankind.",
+//         legacy: "The Manik Prabhu Samsthan continues his mission of harmony and service.",
+//         image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Manik_Prabhu_and_Sai_Baba.jpg"
+//     },
+//     {
+//         name: "Sai Baba of Shirdi (1838 AD – 1918 AD)",
+//         birthplace: "Unknown; Resided in Shirdi, Maharashtra",
+//         era: "19th to early 20th century",
+//         message: "'Sabka Malik Ek' (God is One), serve humanity, and surrender to divine will.",
+//         legacy: "Shirdi is among the most visited pilgrimage sites in the world.",
+//         image: "https://i.ytimg.com/vi/R8m7VdNKhto/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gXygTMA8=&rs=AOn4CLDwE1VajItjwlMeXlOQgszjxq6EnA"
+//     },
+//     {
+//         name: "Vasudevananda Saraswati (Tembye Swami) (1854 AD – 1914 AD)",
+//         birthplace: "Mangaon, Maharashtra",
+//         era: "Late 19th to early 20th century",
+//         message: "Faith in the Guru and strict adherence to spiritual discipline.",
+//         legacy: "His teachings continue to inspire seekers of knowledge and enlightenment.",
+//         image: "https://yt3.ggpht.com/ytc/AKedOLSflcop2cD1pdj9LjRLD8cOsFHXrin2e349V4Q2mw=s900-c-k-c0x00ffffff-no-rj"
+//     },
+//     {
+//         name: "Gajanan Maharaj (Late 19th Century)",
+//         birthplace: "Shegaon, Maharashtra",
+//         era: "Late 19th century",
+//         message: "Be humble, remain detached, and seek spiritual awakening through devotion.",
+//         legacy: "Shegaon has become a spiritual hub, drawing devotees seeking guidance and blessings.",
+//         image: "https://yt3.googleusercontent.com/ytc/APkrFKamBFuRFeXt1F2kFTxadQX2FEWYt-HhAl6H9gkI8w=s900-c-k-c0x00ffffff-no-rj"
+//     }
+// ];
+
+
+// const Incarnations: React.FC = () => {
+//     return (
+//         <>
+//             <div
+//                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center  mb-12"
+//                 style={{
+//                     backgroundImage: `url('https://econet.ru/media/covers/13626/original.jpg?1433353664')`,
+//                 }}
+//             >
+//                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">
+//                     Incarnations of Lord Dattatreya
+//                 </h1>
+//             </div>
+//             <div className="w-full flex -mt-12 justify-center py-16 md:py-20 bg-gradient-to-br from-[#FFFF00] via-[#FFA500] to-[#FFFFFF] min-h-screen">
+//             {/* Main Container */}
+//             <div className="w-full max-w-[calc(100%-200px)] lg:mx-[100px] mx-6 px-6">
+//                 {/* Title Section */}
+//                 {/* <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+//                     Incarnations of Lord Dattatreya
+//                 </h1> */}
+
+//                 {/* Incarnation Cards */}
+//                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+//                     {incarnations.map((incarnation, index) => (
+//                         <div
+//                             key={index}
+//                             className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+//                         >
+//                             {/* Image Section */}
+//                             <div className="w-full h-48 md:h-56 overflow-hidden">
+//                                 <img
+//                                     src={incarnation.image}
+//                                     alt={incarnation.name}
+//                                     className="w-full h-full object-cover"
+//                                 />
+//                             </div>
+
+//                             {/* Text Section */}
+//                             <div className="p-6 space-y-4">
+//                                 <h2 className="text-xl font-semibold text-gray-800">{incarnation.name}</h2>
+//                                 <p className="text-gray-600"><strong>Birthplace:</strong> {incarnation.birthplace}</p>
+//                                 <p className="text-gray-600"><strong>Era:</strong> {incarnation.era}</p>
+//                                 <p className="text-gray-700"><strong>Message:</strong> {incarnation.message}</p>
+//                                 <p className="text-gray-700"><strong>Legacy:</strong> {incarnation.legacy}</p>
+//                             </div>
+//                         </div>
+//                     ))}
+//                 </div>
+
+//                 {/* Interactive Timeline - Full Width */}
+//                 <div className="w-full overflow-hidden mt-12">
+//                     <Timeline />
+//                 </div>
+
+//                 {/* Closing Message */}
+//                 <div className="text-center mt-24">
+//                     <h3 className="text-xl italic text-indigo-900">
+//                         "Learn about the profound messages and enduring legacies of Lord Dattatreya’s incarnations.
+//                         Let their teachings inspire your journey."
+//                     </h3>
+//                 </div>
+//             </div>
+//         </div>
+
+//         {/* footer */}
+//         <div>
+//             <Footer />
+//         </div>
+//         </>
+//     );
+// };
+
+// export default Incarnations;
+
+
+
 import React from "react";
 import Timeline from "../others/TimeLines";
 import Footer from "./Footer";
@@ -560,10 +700,10 @@ const incarnations = [
     }
 ];
 
-
 const Incarnations: React.FC = () => {
     return (
         <>
+            {/* Hero Section */}
             <div
                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center  mb-12"
                 style={{
@@ -574,61 +714,78 @@ const Incarnations: React.FC = () => {
                     Incarnations of Lord Dattatreya
                 </h1>
             </div>
-            <div className="w-full flex -mt-12 justify-center py-16 md:py-20 bg-gradient-to-br from-[#FFFF00] via-[#FFA500] to-[#FFFFFF] min-h-screen">
+
             {/* Main Container */}
-            <div className="w-full max-w-[calc(100%-200px)] lg:mx-[100px] mx-6 px-6">
-                {/* Title Section */}
-                {/* <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-                    Incarnations of Lord Dattatreya
-                </h1> */}
+            <div className="w-full flex justify-center py-12 md:p-2 -mt-12 bg-gradient-to-br bg-yellow-50 to-[#FFFFFF] min-h-screen">
+                
+                <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                        {/* <div className="text-center"> */}
+                            {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                Lord Dattatreya: The Universal Guru
+                            </h2> */}
+                            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                                Lord Dattatreya, the universal Guru, manifests himself across time to guide humanity. His incarnations are a testament to his infinite compassion and eternal wisdom. Each incarnation has played a pivotal role in preserving spiritual traditions and uplifting devotees.
+                            </p>
+                        {/* </div> */}
+                    </div>
+                    
 
-                {/* Incarnation Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {incarnations.map((incarnation, index) => (
-                        <div
-                            key={index}
-                            className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                        >
-                            {/* Image Section */}
-                            <div className="w-full h-48 md:h-56 overflow-hidden">
-                                <img
-                                    src={incarnation.image}
-                                    alt={incarnation.name}
-                                    className="w-full h-full object-cover"
-                                />
+                    {/* Incarnation Cards */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {incarnations.map((incarnation, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                            >
+                                {/* Image Section */}
+                                <div className="w-full h-48 sm:h-56 overflow-hidden">
+                                    <img
+                                        src={incarnation.image}
+                                        alt={incarnation.name}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+
+                                {/* Text Section */}
+                                <div className="p-4 sm:p-6 space-y-3">
+                                    <h2 className="text-xl font-semibold text-gray-800">{incarnation.name}</h2>
+                                    <p className="text-sm sm:text-base text-gray-600">
+                                        <strong>Birthplace:</strong> {incarnation.birthplace}
+                                    </p>
+                                    <p className="text-sm sm:text-base text-gray-600">
+                                        <strong>Era:</strong> {incarnation.era}
+                                    </p>
+                                    <p className="text-sm sm:text-base text-gray-700">
+                                        <strong>Message:</strong> {incarnation.message}
+                                    </p>
+                                    <p className="text-sm sm:text-base text-gray-700">
+                                        <strong>Legacy:</strong> {incarnation.legacy}
+                                    </p>
+                                </div>
                             </div>
+                        ))}
+                    </div>
 
-                            {/* Text Section */}
-                            <div className="p-6 space-y-4">
-                                <h2 className="text-xl font-semibold text-gray-800">{incarnation.name}</h2>
-                                <p className="text-gray-600"><strong>Birthplace:</strong> {incarnation.birthplace}</p>
-                                <p className="text-gray-600"><strong>Era:</strong> {incarnation.era}</p>
-                                <p className="text-gray-700"><strong>Message:</strong> {incarnation.message}</p>
-                                <p className="text-gray-700"><strong>Legacy:</strong> {incarnation.legacy}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                    {/* Interactive Timeline - Full Width */}
+                    <div className="w-full overflow-hidden mt-12">
+                        <Timeline />
+                    </div>
 
-                {/* Interactive Timeline - Full Width */}
-                <div className="w-full overflow-hidden mt-12">
-                    <Timeline />
-                </div>
-
-                {/* Closing Message */}
-                <div className="text-center mt-24">
-                    <h3 className="text-xl italic text-indigo-900">
-                        "Learn about the profound messages and enduring legacies of Lord Dattatreya’s incarnations.
-                        Let their teachings inspire your journey."
-                    </h3>
+                    {/* Closing Message */}
+                    <div className="text-center mt-12">
+                        <h3 className="text-lg sm:text-xl italic text-indigo-900">
+                            "Learn about the profound messages and enduring legacies of Lord Dattatreya’s incarnations.
+                            Let their teachings inspire your journey."
+                        </h3>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        {/* footer */}
-        <div>
-            <Footer />
-        </div>
+            {/* Footer */}
+            <div>
+                <Footer />
+            </div>
         </>
     );
 };

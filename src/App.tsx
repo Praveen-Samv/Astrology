@@ -24,6 +24,7 @@ import RestoringTheDevotee from "./components/books/RestoringTheDevotee";
 import MiraculasFood from "./components/books/MiraculasFood";
 import TheLeelas from "./components/books/TheLeelas";
 import SwamiSmarth from "./components/books/SwamiSmarth";
+import Contact from "./components/navMain/Contact";
 
 
 const App: React.FC = () => {
@@ -54,6 +55,7 @@ const App: React.FC = () => {
 
         <Route path="temples" element={<Temples />} />
         <Route path="modern" element={<ModernTeaching />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
       
       

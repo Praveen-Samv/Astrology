@@ -256,7 +256,7 @@ const JoinDattaFamily: React.FC = () => {
                     />
                     <div className="p-6">
                         <p className="text-gray-700 text-left mb-4">
-                            Stay updated on events,resources,and spiritual insights.
+                            Stay updated on events, resources, and spiritual insights.
                         </p>
                         <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
                             Subscribe
@@ -273,10 +273,10 @@ const JoinDattaFamily: React.FC = () => {
                     />
                     <div className="p-6">
                         <p className="text-gray-700 text-left mb-4">
-                            Connect with like-minded devotees and grow spiritually.
+                            Support our mission to spread the message of Lord Dattatreya.
                         </p>
                         <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
-                            Join Now
+                            Donate
                         </button>
                     </div>
                 </div>
@@ -290,10 +290,10 @@ const JoinDattaFamily: React.FC = () => {
                     />
                     <div className="p-6">
                         <p className="text-gray-700 text-left mb-4">
-                            Access exclusive content and deepen your devotion.
+                            We’re here for your questions, feedback, and spiritual guidance.
                         </p>
                         <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
-                            Explore
+                            Contact Us
                         </button>
                     </div>
                 </div>
@@ -311,3 +311,4 @@ const JoinDattaFamily: React.FC = () => {
 };
 
 export default JoinDattaFamily;
+ 

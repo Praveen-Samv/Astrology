@@ -507,11 +507,94 @@ const temples = [
     }
 ];
 
+
+// const Temples: React.FC = () => {
+//     return (
+//         <>
+//             <div
+//                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center mb-12"
+//                 style={{
+//                     backgroundImage: `url('https://repository-images.githubusercontent.com/257767091/ddd9f900-d40b-11ea-843b-d0e87ac035c6')`,
+//                 }}
+//             >
+//                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">
+//                     Temples and Holy Sites of Lord Dattatreya
+//                 </h1>
+//             </div>
+
+//             <div className="bg-gradient-to-br -mt-12 bg-yellow-50 to-[#FFFFFF] min-h-screen">
+//                 <div className="container mx-auto px-4 py-10 mt-12">
+//                     <p className="text-center text-gray-700 mb-8">
+//                         The temples and holy sites dedicated to Lord Dattatreya are sanctuaries of peace, devotion,
+//                         and spiritual awakening. These sacred places hold profound significance as they resonate with
+//                         the divine energy of Lord Datta and his incarnations. Pilgrims from across the world visit these
+//                         sites to seek blessings, meditate, and immerse themselves in the Guru’s grace.
+//                     </p>
+
+//                     <div className="space-y-8">
+//                         {temples.map((temple, index) => (
+//                             <div key={index} className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+//                                 <img
+//                                     src={temple.image}
+//                                     alt={temple.name}
+//                                     className="w-full md:w-1/3 h-64 object-cover rounded-md"
+//                                 />
+//                                 <div className="md:ml-6 mt-4 md:mt-0">
+//                                     <h2 className="text-2xl font-semibold">{temple.name}</h2>
+//                                     <p className="text-gray-600">{temple.location}</p>
+//                                     <p className="text-gray-700 mt-2 font-medium">Significance: {temple.significance}</p>
+//                                     <p className="italic text-gray-700 mt-2">{temple.keyHighlights}</p>
+//                                     <ul className="list-disc pl-5 mt-2 text-sm text-gray-700">
+//                                         {temple.highlights.map((point, i) => (
+//                                             <li key={i}>{point}</li>
+//                                         ))}
+//                                     </ul>
+
+//                                     {/* "Know More" Button moved to the right of the card */}
+//                                     <a
+//                                         href={temple.moreInfoUrl}
+//                                         target="_blank"
+//                                         rel="noopener noreferrer"
+//                                         className="text-blue-500 hover:text-blue-700 hover:underline mt-4 ml-auto inline-block transition duration-300 ease-in-out"
+//                                     >
+//                                         Know More
+//                                     </a>
+//                                 </div>
+//                             </div>
+//                         ))}
+//                     </div>
+
+//                     <div className="mt-10 text-center">
+//                         <h2 className="text-2xl font-bold mb-4">Why Visit These Holy Sites?</h2>
+//                         <ul className="list-disc text-left inline-block text-gray-700">
+//                             <li>Spiritual Awakening: Experience the divine energy and profound peace at these sacred locations.</li>
+//                             <li>Rituals and Practices: Participate in ancient rituals like Paduka Puja, Arati, and sacred baths at holy rivers.</li>
+//                             <li>Strengthen Faith: Witness the spiritual power and grace of Lord Dattatreya’s incarnations.</li>
+//                         </ul>
+//                     </div>
+
+//                     {/* Inspirational Quote Section */}
+//                     <div className="mt-16 text-center py-12 px-8">
+//                         <blockquote className="text-xl italic text-indigo-900">
+//                             "Every step taken toward a sacred site is a step closer to the divine."
+//                         </blockquote>
+//                     </div>
+//                 </div>
+//             </div>
+
+//             {/* Footer */}
+//             <div>
+//                 <Footer />
+//             </div>
+//         </>
+//     );
+// };
+
 const Temples: React.FC = () => {
     return (
         <>
             <div
-                className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center  mb-12"
+                className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center mb-12"
                 style={{
                     backgroundImage: `url('https://repository-images.githubusercontent.com/257767091/ddd9f900-d40b-11ea-843b-d0e87ac035c6')`,
                 }}
@@ -519,61 +602,78 @@ const Temples: React.FC = () => {
                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">
                     Temples and Holy Sites of Lord Dattatreya
                 </h1>
-                
             </div>
-            <div className="bg-gradient-to-br -mt-12 from-[#FFFF00] via-[#FFA500] to-[#FFFFFF] min-h-screen">
-            <div className="container mx-auto px-4 py-10 mt-12">
-                {/* <h1 className="text-3xl font-bold text-center mb-6">Temples and Holy Sites of Lord Dattatreya</h1> */}
-                <p className="text-center text-gray-700 mb-8">
-                    These sacred places hold profound significance as they resonate with the divine energy of Lord Datta and his incarnations.
-                </p>
-                <blockquote className="text-center italic text-gray-600 mb-8">"Every step taken toward a sacred site is a step closer to the divine."</blockquote>
-                <div className="space-y-8">
-                    {temples.map((temple, index) => (
-                        <div key={index} className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
-                            <img src={temple.image} alt={temple.name} className="w-full md:w-1/3 h-64 object-cover rounded-md" />
-                            <div className="md:ml-6 mt-4 md:mt-0">
-                                <h2 className="text-2xl font-semibold">{temple.name}</h2>
-                                <p className="text-gray-600">{temple.location}</p>
-                                <p className="text-gray-700 mt-2 font-medium">Significance: {temple.significance}</p>
-                                <p className="italic text-gray-700 mt-2">{temple.keyHighlights}</p>
-                                <ul className="list-disc pl-5 mt-2 text-sm text-gray-700">
-                                    {temple.highlights.map((point, i) => (
-                                        <li key={i}>{point}</li>
-                                    ))}
-                                </ul>
-                                <a href={temple.moreInfoUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mt-4 inline-block">Know More</a>
+
+            <div className="bg-gradient-to-br -mt-12 bg-yellow-50 to-[#FFFFFF] min-h-screen">
+                <div className="container mx-auto px-4 py-10 mt-12">
+                    <p className="text-center text-gray-700 mb-8">
+                        The temples and holy sites dedicated to Lord Dattatreya are sanctuaries of peace, devotion,
+                        and spiritual awakening. These sacred places hold profound significance as they resonate with
+                        the divine energy of Lord Datta and his incarnations. Pilgrims from across the world visit these
+                        sites to seek blessings, meditate, and immerse themselves in the Guru’s grace.
+                    </p>
+
+                    <div className="space-y-8">
+                        {temples.map((temple, index) => (
+                            <div key={index} className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+                                <img
+                                    src={temple.image}
+                                    alt={temple.name}
+                                    className="w-full md:w-1/3 h-64 object-cover rounded-md"
+                                />
+                                <div className="md:ml-6 mt-4 md:mt-0">
+                                    <h2 className="text-2xl font-semibold">{temple.name}</h2>
+                                    <p className="text-gray-600">{temple.location}</p>
+                                    <p className="text-gray-700 mt-2 font-medium">Significance: {temple.significance}</p>
+                                    <p className="italic text-gray-700 mt-2">{temple.keyHighlights}</p>
+                                    <ul className="list-disc pl-5 mt-2 text-sm text-gray-700">
+                                        {temple.highlights.map((point, i) => (
+                                            <li key={i}>{point}</li>
+                                        ))}
+                                    </ul>
+
+                                    {/* "Know More" Button moved to the right of the card */}
+                                    <a
+                                        href={temple.moreInfoUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-blue-500 hover:text-blue-700 hover:underline mt-4 ml-auto inline-block transition duration-300 ease-in-out"
+                                    >
+                                        Know More
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
-                <div className="mt-10 text-center">
-                    <h2 className="text-2xl font-bold mb-4">Why Visit These Holy Sites?</h2>
-                    <ul className="list-disc text-left inline-block text-gray-700">
-                        <li>Spiritual Awakening: Experience the divine energy and profound peace at these sacred locations.</li>
-                        <li>Rituals and Practices: Participate in ancient rituals like Paduka Puja, Arati, and sacred baths at holy rivers.</li>
-                        <li>Strengthen Faith: Witness the spiritual power and grace of Lord Dattatreya’s incarnations.</li>
-                    </ul>
-                </div>
+                        ))}
+                    </div>
+
+                    <div className="mt-10 text-center">
+                        <h2 className="text-2xl font-bold mb-4">Why Visit These Holy Sites?</h2>
+                        <ul className="list-disc text-left inline-block text-gray-700">
+                            <li>Spiritual Awakening: Experience the divine energy and profound peace at these sacred locations.</li>
+                            <li>Rituals and Practices: Participate in ancient rituals like Paduka Puja, Arati, and sacred baths at holy rivers.</li>
+                            <li>Strengthen Faith: Witness the spiritual power and grace of Lord Dattatreya’s incarnations.</li>
+                        </ul>
+                    </div>
 
                     {/* Inspirational Quote Section */}
-                    <div className="mt-16 text-center    py-12 px-8">
+                    <div className="mt-16 text-center py-12 px-8">
                         <blockquote className="text-xl italic text-indigo-900">
                             "Every step taken toward a sacred site is a step closer to the divine."
                         </blockquote>
                     </div>
+                </div>
             </div>
-        </div>
 
-        {/* footer  */}
-        <div>
-            <Footer />
-        </div>
+            {/* Footer */}
+            <div>
+                <Footer />
+            </div>
         </>
     );
 };
 
 export default Temples;
+
 
 
 

@@ -391,7 +391,7 @@ const About: React.FC = () => {
                     About Lord Dattatreya
                 </h1>
             </div>
-            <div className="w-full flex justify-center -mt-12 bg-gradient-to-br from-[#FFFF00] via-[#FFA500] to-[#FFFFFF] min-h-screen">
+            <div className="w-full flex justify-center -mt-12 bg-gradient-to-br bg-yellow-50 to-[#FFFFFF] min-h-screen">
                 
             {/* Main Container */}
             <div className="w-full max-w-[calc(100%-200px)] lg:mx-[100px] mx-6 px-6 py-16 md:py-20">
@@ -426,6 +426,8 @@ const About: React.FC = () => {
                             Lord Dattatreya is the divine embodiment of the Holy Trinity—Brahma (Creator), Vishnu
                             (Preserver), and Maheshwara (Destroyer). Revered as the Adi Guru (Primordial Teacher), he
                             represents the ultimate source of spiritual wisdom, cosmic harmony, and divine grace.
+                                Known as the protector, guide, and liberator, Lord Datta's teachings transcend time and lead
+                                devotees toward self-realization and inner peace.
                         </p>
                     </div>
                 </div>
@@ -448,6 +450,10 @@ const About: React.FC = () => {
                         <p className="text-gray-700 leading-relaxed">
                             Lord Dattatreya was born to Sage Atri and Anasuya, whose devotion and purity were legendary.
                             When the Holy Trinity tested Anasuya's chastity, her virtue transformed them into a single divine being—Lord Dattatreya.
+                                His birth symbolizes the
+                                unification of creation, preservation, and destruction, offering humanity a path to liberation.
+                                Did You Know : Lord Datta’s birthplace, Anasuya’s hermitage, is considered a sacred spot for
+                                seekers of wisdom and devotion.
                         </p>
                     </div>
                 </div>
@@ -476,7 +482,23 @@ const About: React.FC = () => {
                                 Represent the four Vedas, emphasizing their eternal wisdom.
                             </p>
                         </div>
-                    </div>
+                        <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                                <h3 className="text-lg font-semibold text-gray-800">Cow</h3>
+                                <p className="text-gray-600 mt-2">
+                                    RSignifies Mother Earth, nurturing all beings with boundless love.
+                                </p>
+                        </div>
+                            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                                <h3 className="text-lg font-semibold text-gray-800">Matted Hair and Ashes</h3>
+                                <p className="text-gray-600 mt-2">
+                                    Symbolize detachment, renunciation, and spiritual purity.
+                                </p>
+                            </div>
+
+
+                        </div>
+                        
+                        
                 </div>
 
                 {/* Why is Lord Dattatreya Important? */}
@@ -496,15 +518,48 @@ const About: React.FC = () => {
                         </h2>
                         <p className="text-gray-700 leading-relaxed">
                             Lord Datta is not just a deity; he is the Universal Guru, guiding humanity to enlightenment.
-                            His teachings offer solutions to life’s challenges while nurturing the soul.
+                                His teachings offer solutions to life’s challenges while nurturing the soul.Key lessons from his life
+                                include:
                         </p>
                         <ul className="list-disc list-inside text-gray-700 mt-4 space-y-2">
                             <li><span className="font-semibold">Detachment:</span> True freedom comes from releasing material desires.</li>
                             <li><span className="font-semibold">Self-Realization:</span> Seek and discover your true self.</li>
                             <li><span className="font-semibold">Unity in Diversity:</span> Recognize the interconnectedness of all beings.</li>
                         </ul>
+                            <p className="text-gray-700 leading-relaxed">
+                                Lord Datta’s relevance today: His teachings provide practical wisdom to live with clarity,
+                                purpose, and spiritual depth.
+                        </p>
                     </div>
+
+                    
                 </div>
+                
+                    <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 mb-20">
+                        {/* Image */}
+                        <div className="md:w-1/2 flex justify-center">
+                            <img
+                                src="https://i.ytimg.com/vi/v2S-tUJ95n4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVSgrMA8=&rs=AOn4CLBqTi4G0DTwpS4n9HtZCIUch9aM-g"
+                                alt="Importance of Lord Dattatreya"
+                                className="rounded-lg shadow-lg w-full md:w-4/5 object-cover"
+                            />
+                        </div>
+                        {/* Text Content */}
+                        <div className="md:w-1/2 space-y-6 md:space-y-8">
+                            <h2 className="text-2xl font-semibold text-gray-800">
+                                What Makes Lord Dattatreya Unique
+                            </h2>
+                            <p className="text-gray-700 leading-relaxed">
+                                Lord Dattatreya is approachable, compassionate, and ever-present. He is often referred to as a
+                                Digambara (One who is free from worldly possessions), reminding us to rise above
+                                materialism. Whether guiding a devotee, performing miracles, or imparting wisdom through the
+                                Guru Charitra and Charitaamrutam, Lord Datta continues to inspire millions.
+                            </p>
+                            
+                        </div>
+
+
+                    </div>
 
                 {/* Closing Message */}
                 <div className="text-center mt-20">
@@ -526,3 +581,6 @@ const About: React.FC = () => {
 };
 
 export default About;
+
+
+

@@ -273,15 +273,18 @@ const ModernTeaching: React.FC = () => {
                
                 
             </div>
-            <div className="bg-gradient-to-br -mt-12 from-[#FFFF00] via-[#FFA500] to-[#FFFFFF] min-h-screen">
+            <div className="bg-gradient-to-br -mt-12 bg-yellow-50">
             <div className="max-w-7xl mx-auto px-4  sm:px-6 lg:px-8 py-16">
                 {/* Title Section */}
-                {/* <div >
+                <div >
                    
-                    <p className="text-lg text-center text-gray-600 mb-4">
-                        Timeless wisdom to guide you in achieving balance, purpose, and inner peace.
+                    <p className="text-lg text-left text-gray-600 mb-8">
+                            The teachings of Lord Dattatreya transcend time and are as relevant today as they were
+                            centuries ago. His philosophy provides practical guidance to navigate the complexities of
+                            modern life, offering solutions for inner peace, purpose, and harmony in a fast-paced and
+                            ever-changing world.
                     </p>
-                </div> */}
+                </div>
 
                 {/* Teachings Section */}
                 <div className="space-y-12">
@@ -315,7 +318,7 @@ const ModernTeaching: React.FC = () => {
                     ))}
                 </div>
 
-                {/* Key Takeaways Section */}
+                {/* Key Takeaways Section
                 <div className="mt-16 text-center">
                     <h2 className="text-3xl font-bold text-gray-800 mb-6">Key Takeaways for Modern Living</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -330,7 +333,45 @@ const ModernTeaching: React.FC = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
+
+
+                    {/* Key Takeaways Section */}
+                    <div className="mt-16 text-center">
+                        <h2 className="text-3xl font-bold text-gray-800 mb-6">Key Takeaways for Modern Living</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {[
+                                {
+                                    text: "Inner Peace: Detachment and mindfulness help overcome stress.",
+                                    image: "https://i.ytimg.com/vi/CknCw-iyFoA/maxresdefault.jpg",
+                                },
+                                {
+                                    text: "Purposeful Living: Align actions with spiritual values and higher goals.",
+                                    image: "https://avatars.mds.yandex.net/i?id=8779d5f8e458e18da94e4a0ed4c38ffa398d325a-8487335-images-thumbs&n=13",
+                                },
+                                {
+                                    text: "Community Harmony: Foster unity and inclusivity by seeing the divine in all beings.",
+                                    image: "https://cdn.culture.ru/images/36ad95cc-6896-5d5d-9f72-efbfb887fbe8",
+                                },
+                                {
+                                    text: "Resilience: Trust in divine timing and cultivate patience for long-term success.",
+                                    image: "https://avatars.mds.yandex.net/i?id=d3bb6ac355adbe44849956a3e9f052fa6ad54c16-9053088-images-thumbs&n=13",
+                                },
+                            ].map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                                >
+                                    <img
+                                        src={item.image}
+                                        alt={item.text}
+                                        className="w-full h-32 object-cover rounded-md mb-4"
+                                    />
+                                    <p className="text-gray-700">{item.text}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
 
                 {/* Inspirational Quote Section */}
                 <div className="mt-16 text-center    py-12 px-8">

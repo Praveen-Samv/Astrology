@@ -21,7 +21,7 @@
 //   )
 // }
 
-// export default Home 
+// export default Home
 
 
 
@@ -47,7 +47,7 @@
 //   );
 // };
 
-// export default Home;
+// export default Home; from-[#FFFF00] via-[#FFA500]
 
 
 import HeroSection from '../homescreens/HeroSection';
@@ -60,7 +60,7 @@ import Footer from './Footer';
 const Home = () => {
   return (
     <>
-      <div className="bg-gradient-to-br mt-16 from-[#FFFF00] via-[#FFA500] to-[#FFFFFF]">
+      <div className="bg-gradient-to-br mt-16 bg-yellow-50 to-[#FFFFFF]">
         <HeroSection />
         <LordDattatray />
         <ExploreDivine />
