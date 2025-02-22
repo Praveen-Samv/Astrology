@@ -250,7 +250,7 @@ const JoinDattaFamily: React.FC = () => {
                 {/* Card 1 */}
                 <div className="flex-1 bg-white rounded-lg shadow-lg overflow-hidden">
                     <img
-                        src="https://avatars.mds.yandex.net/i?id=84276e0f33678a93d52b7b6ba4b524249944264c-6845455-images-thumbs&n=13"
+                        src="src\assets\contact\i (2).webp"
                         alt="Datta Devotee"
                         className="w-full h-48 object-cover"
                     />
@@ -267,7 +267,7 @@ const JoinDattaFamily: React.FC = () => {
                 {/* Card 2 */}
                 <div className="flex-1 bg-white rounded-lg shadow-lg overflow-hidden">
                     <img
-                        src= "https://image.winudf.com/v2/image1/Y29tLmZ4X3dhbGxwYXBlcnMuRGF0dGF0cmV5X3dhbGxwYXBlcnNfc2NyZWVuXzIwXzE2NDQ2MzAyNzZfMDMw/screen-20.jpg?fakeurl=1&type=.jpg"
+                        src= "src\assets\contact\i (2).webp"
                         alt="Datta Devotee"
                         className="w-full h-48 object-cover"
                     />
@@ -284,7 +284,7 @@ const JoinDattaFamily: React.FC = () => {
                 {/* Card 3 */}
                 <div className="flex-1 bg-white rounded-lg shadow-lg overflow-hidden">
                     <img
-                        src="https://i.ytimg.com/vi/yiORKchYf5w/maxresdefault.jpg"
+                        src="src\assets\contact\maxresdefault.jpg"
                         alt="Datta Devotee"
                         className="w-full h-48 object-cover"
                     />

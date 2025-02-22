@@ -182,7 +182,7 @@ const teachings = [
             "Practice gratitude for what you have instead of yearning for more.",
             "Dedicate time daily to reflect on non-material sources of happiness, such as family, nature, and self-growth."
         ],
-        image: "https://i.ytimg.com/vi/nnQM-QSCwSg/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgPig1MA8=&rs=AOn4CLCZgfcRcUtz1M_Cj9V9oO_vgKV00Q"
+        image: "src/assets/modern/maxresdefault (3).jpg"
     },
     {
         title: "The Power of Self-Realization",
@@ -192,7 +192,7 @@ const teachings = [
             "Meditate daily to connect with your inner self and clarify your life’s purpose.",
             "Align your actions with your core values and higher goals."
         ],
-        image: "https://i.ytimg.com/vi/aeqSsItjmeM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGCsgZSgwMA8=&amp"
+        image: "src/assets/modern/maxresdefault (5).jpg"
     },
     {
         title: "Oneness and Unity in Diversity",
@@ -202,7 +202,7 @@ const teachings = [
             "Practice empathy by listening to others’ perspectives without judgment.",
             "Participate in community-building activities that bridge gaps between diverse groups."
         ],
-        image: "https://sun9-32.userapi.com/impg/EIj_jm0P0S0HFp5ZBxySG61v3_0138yDmEmKKw/eM-d394s0e0.jpg?size=781x654&quality=96&sign=9f3b2ac0036d12e16b262a277b03b746&c_uniq_tag=bgzlvJuOYnBoDKsqJQ5yPm0wBKSFatLjG-9HQFdDVEo&type=album"
+        image: "src/assets/modern/eM-d394s0e0.jpg"
     },
     {
         title: "Balancing Action and Rest (The Gunas)",
@@ -212,7 +212,7 @@ const teachings = [
             "Incorporate periods of rest and self-care amidst your busy schedule.",
             "Focus on cultivating Sattva through mindfulness, healthy eating, and meaningful interactions."
         ],
-        image: "https://i.ytimg.com/vi/v2S-tUJ95n4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVSgrMA8=&rs=AOn4CLBqTi4G0DTwpS4n9HtZCIUch9aM-g"
+        image: "src/assets/modern/maxresdefault (6).jpg"
     },
     {
         title: "Faith and Patience in a Fast-Paced World",
@@ -222,7 +222,7 @@ const teachings = [
             "Trust the process and avoid rushing important decisions.",
             "Practice mindfulness to cultivate patience in challenging situations."
         ],
-        image: "https://i.ytimg.com/vi/p74eROQGwOI/maxresdefault.jpg"
+        image: "src/assets/modern/maxresdefault (2).jpg"
     },
     {
         title: "Selfless Service (Karma Yoga)",
@@ -232,7 +232,7 @@ const teachings = [
             "Volunteer for social causes or community service.",
             "Help others without expecting anything in return, viewing service as an offering to the divine."
         ],
-        image: "https://i.ytimg.com/vi/fxjPcqz8o8U/maxresdefault.jpg"
+        image: "src/assets/modern/maxresdefault (4).jpg"
     },
     {
         title: "Harnessing the Lessons from Nature (24 Gurus)",
@@ -243,7 +243,7 @@ const teachings = [
             "Sun: Embrace selfless service, shining your light for others.",
             "Spider: Understand life’s cyclical nature—create, preserve, and let go when needed."
         ],
-        image: "https://i.ytimg.com/vi/aeqSsItjmeM/maxresdefault.jpg"
+        image: "src/assets/modern/maxresdefault.jpg"
     },
     {
         title: "Strengthening Faith Through Devotion",
@@ -253,7 +253,7 @@ const teachings = [
             "Set aside time daily for prayer, chanting, or reading sacred texts like Guru Charitra.",
             "Attend community prayers or spiritual gatherings to deepen your connection with others and the divine."
         ],
-        image: "https://i.ytimg.com/vi/v2S-tUJ95n4/maxresdefault.jpg"
+        image: "src/assets/modern/maxresdefault (1).jpg"
     }
 ];
 
@@ -264,7 +264,7 @@ const ModernTeaching: React.FC = () => {
             <div
                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center  mb-12"
                 style={{
-                    backgroundImage: `url('https://avatars.mds.yandex.net/get-mpic/3913686/img_id896587762305902504.jpeg/orig')`,
+                    backgroundImage: `url('src/assets/about/orig.webp')`,
                 }}
             >
                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">
@@ -343,19 +343,19 @@ const ModernTeaching: React.FC = () => {
                             {[
                                 {
                                     text: "Inner Peace: Detachment and mindfulness help overcome stress.",
-                                    image: "https://i.ytimg.com/vi/CknCw-iyFoA/maxresdefault.jpg",
+                                    image: "src/assets/modern/maxresdefault (7).jpg",
                                 },
                                 {
                                     text: "Purposeful Living: Align actions with spiritual values and higher goals.",
-                                    image: "https://avatars.mds.yandex.net/i?id=8779d5f8e458e18da94e4a0ed4c38ffa398d325a-8487335-images-thumbs&n=13",
+                                    image: "src/assets/modern/i.webp",
                                 },
                                 {
                                     text: "Community Harmony: Foster unity and inclusivity by seeing the divine in all beings.",
-                                    image: "https://cdn.culture.ru/images/36ad95cc-6896-5d5d-9f72-efbfb887fbe8",
+                                    image: "src/assets/modern/36ad95cc-6896-5d5d-9f72-efbfb887fbe8.jpg",
                                 },
                                 {
                                     text: "Resilience: Trust in divine timing and cultivate patience for long-term success.",
-                                    image: "https://avatars.mds.yandex.net/i?id=d3bb6ac355adbe44849956a3e9f052fa6ad54c16-9053088-images-thumbs&n=13",
+                                    image: "src/assets/modern/i (1).webp",
                                 },
                             ].map((item, index) => (
                                 <div

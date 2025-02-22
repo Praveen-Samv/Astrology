@@ -126,12 +126,12 @@
 import { useEffect, useState } from "react";
 
 const images = [
-    "https://1.bp.blogspot.com/_WtwHwVoqsYQ/TRSwPJ-BBWI/AAAAAAAAC0M/syKe_EvMoik/s1600/Datta+Jayanti0005.JPG",
-    '/public/home/8391404.jpg',
-    "/public/home/8917386.png",
-    "https://i.ytimg.com/vi/yLfYtt7zpV4/maxresdefault.jpg",
-    "https://i.ytimg.com/vi/p74eROQGwOI/maxresdefault.jpg",
-    "/public/home/8917420.jpg",
+    "src/assets/home/lord-datta-fronts.png",
+    'src/assets/home/8391404.jpg',
+    // "src/assets/home/Datta Jayanti0005.JPG",
+    "src/assets/home/datta.jpg",
+    "src/assets/home/lord-datta-side.png",
+    "src/assets/home/8917420.jpg",
 ];
 
 const HeroSection = () => {

@@ -20,7 +20,7 @@ const Blinddevoot: React.FC = () => {
 
                 {/* Blog Image */}
                 <img
-                    src="https://www.churchofjesuschrist.org/imgs/1e41d0c50e7d80b947fff990944def7d0c99f349/full/1280%2C/0/default" // Replace with your image URL
+                        src="src\assets\scriptures\jesus_healing_blind_man.webp" // Replace with your image URL
                     alt="Healing a Blind Devotee"
                     className="w-full h-64 object-cover rounded-lg mb-8"
                 />

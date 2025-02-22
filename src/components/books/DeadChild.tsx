@@ -122,7 +122,7 @@ const Blog: React.FC = () => {
 
             {/* Image */}
             <img
-                src="https://c.wallhere.com/photos/6d/87/1600x1200_px_art_creepy_Dark_death_Gothic_grim_horror-1496543.jpg!d" // Replace with your image path
+                    src="src\assets\scriptures\i (3).webp" // Replace with your image path
                 alt="Revival Miracle"
                 className="w-full h-96 mb-4"
             />

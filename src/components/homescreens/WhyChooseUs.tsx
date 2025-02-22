@@ -134,7 +134,7 @@ const WhyChooseUs: React.FC = () => {
                 <div className="w-full lg:w-1/2 lg:mt-16">
                     <div className="aspect-[16/9] rounded-xl shadow-lg overflow-hidden">
                         <img
-                            src="https://i.ytimg.com/vi/p74eROQGwOI/maxresdefault.jpg"
+                            src="src/assets/about/maxresdefault.jpg"
                             alt="Why Choose Us"
                             className="w-full h-full object-cover"
                         />

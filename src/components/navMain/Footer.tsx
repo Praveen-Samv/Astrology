@@ -3,15 +3,15 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "re
 const Footer = () => {
     return (
         <div
-            className="relative z-10 shadow-md"
+            className="relative z-100 shadow-md"
             style={{
-                backgroundImage: `url('https://i.ytimg.com/vi/BowAJ4J4wgw/maxresdefault.jpg')`,
+                backgroundImage: `url('src/assets/home/maxresdefault (10).jpg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
         >
             {/* Overlay with blur effect */}
-            <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-50  backdrop-blur-sm"></div>
 
             {/* Footer Container */}
             <div className="relative z-20 flex flex-col items-start p-8 gap-8 max-w-6xl mx-auto">

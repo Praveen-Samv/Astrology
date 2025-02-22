@@ -14,7 +14,7 @@ const TheLeelas = () => {
                 </h1>
                 {/* Blog Image */}
                 <img
-                    src="https://i.ytimg.com/vi/nHO-oknJvO0/maxresdefault.jpg" // Replace with your image URL
+                        src="src\assets\scriptures\maxresdefault (8).jpg" // Replace with your image URL
                     alt=" The Leelas of Sripada Srivallabha - Divine Grace in Action"
                     className="w-full h-64 object-cover rounded-lg mb-8"
                 />

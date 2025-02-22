@@ -20,7 +20,7 @@ const ProtectionThieve: React.FC = () => {
 
                 {/* Blog Image */}
                 <img
-                    src="https://i.ytimg.com/vi/YyH8c-LNLn8/maxresdefault.jpg" // Replace with your image URL
+                        src="src\assets\scriptures\maxresdefault (7).jpg" // Replace with your image URL
                     alt="Protection from Thieves"
                     className="w-full h-64 object-cover rounded-lg mb-8"
                 />

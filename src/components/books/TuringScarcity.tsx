@@ -17,7 +17,7 @@ const TuringScarcity: React.FC = () => {
 
                     {/* Blog Image */}
                     <img
-                        src="https://i.ytimg.com/vi/01CKQVawBVE/maxresdefault.jpg" // Replace with your image URL
+                            src="src\assets\scriptures\maxresdefault (9).jpg" // Replace with your image URL
                         alt="Swami Samarth Miracle"
                         className="w-full h-64 object-cover mb-8 rounded-lg"
                     />

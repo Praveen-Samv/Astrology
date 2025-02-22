@@ -620,25 +620,25 @@ const teachings = [
         title: "Detachment from Materialism",
         description: "Attachments bind the soul. True freedom lies in simplicity and renunciation.",
         lesson: "Let go of material desires to experience inner peace.",
-        image: "https://i.ytimg.com/vi/nnQM-QSCwSg/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgPig1MA8=&rs=AOn4CLCZgfcRcUtz1M_Cj9V9oO_vgKV00Q"
+        image: "src/assets/teaching/maxresdefault (1).jpg"
     },
     {
         title: "Self-Realization",
         description: "The divine is within you. Your journey is not outward but inward.",
         lesson: "Seek the truth within to uncover your spiritual potential.",
-        image: "https://i.ytimg.com/vi/aeqSsItjmeM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGCsgZSgwMA8=&amp"
+        image: "src/assets/teaching/maxresdefault.jpg"
     },
     {
         title: "Unity of Creation",
         description: "All life is interconnected, and compassion bridges the gaps.",
         lesson: "Recognize divinity in every being and practice kindness.",
-        image: "https://sun9-32.userapi.com/impg/EIj_jm0P0S0HFp5ZBxySG61v3_0138yDmEmKKw/eM-d394s0e0.jpg?size=781x654&quality=96&sign=9f3b2ac0036d12e16b262a277b03b746&c_uniq_tag=bgzlvJuOYnBoDKsqJQ5yPm0wBKSFatLjG-9HQFdDVEo&type=album"
+        image: "src/assets/teaching/eM-d394s0e0.jpg"
     },
     {
         title: "Guru Bhakti (Faith in the Guru)",
         description: "A Guru is the guiding force who leads you to the ultimate truth.",
         lesson: "Surrender to the Guru’s wisdom to achieve liberation.",
-        image: "https://i.ytimg.com/vi/v2S-tUJ95n4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVSgrMA8=&rs=AOn4CLBqTi4G0DTwpS4n9HtZCIUch9aM-g"
+        image: "src/assets/teaching/maxresdefault (2).jpg"
     }
 ];
 
@@ -649,7 +649,7 @@ const Teachings: React.FC = () => {
             <div
                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center  mb-12"
                 style={{
-                    backgroundImage: `url('https://image.winudf.com/v2/image/Y29tLlBlcmZlY3R1c0x3cC5Vbml2ZXJzZTIwX3NjcmVlbnNob3RzXzJfN2EyNjYyMmU/screen-2.jpg?fakeurl=1&type=.jpg')`,
+                    backgroundImage: `url('src/assets/teaching/screen-2.jpg')`,
                 }}
             >
                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">

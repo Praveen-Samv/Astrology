@@ -20,7 +20,7 @@ const LeperBrahma: React.FC = () => {
 
                 {/* Blog Image */}
                 <img
-                    src="https://i.ytimg.com/vi/79OLOqhY2k8/maxresdefault.jpg" // Replace with your image URL
+                        src="src\assets\scriptures\maxresdefault (6).jpg" // Replace with your image URL
                     alt="The Leper Brahmin Cured"
                     className="w-full h-64 object-cover rounded-lg mb-8"
                 />

@@ -30,7 +30,7 @@ const SwamiSmarth = () => {
                         powerful lessons that continue to inspire faith and devotion in his followers.
                     </p>
                     <img
-                        src="https://1.bp.blogspot.com/-TCTEg1ATSn8/VruDZ0K06ZI/AAAAAAAAAAo/Tu0ovBIqhzY/s1600/vision.jpg"
+                            src="src\assets\scriptures\vision.jpg"
                         alt="Swami Samarth"
                         className="w-full h-96 object-cover rounded-lg mb-8"
                     />
@@ -41,7 +41,7 @@ const SwamiSmarth = () => {
                     <div className="md:flex gap-8 items-start">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <img
-                                src="https://www.dailypioneer.com/uploads/2018/story/images/big/sunshine-in-punjab--haryana-after-3-days-of-rain-2018-09-25.jpg"
+                                    src="src\assets\scriptures\sunshine-in-punjab--haryana-after-3-days-of-rain-2018-09-25.jpg"
                                 alt="Farmer receiving blessings"
                                 className="rounded-lg shadow-lg"
                             />
@@ -84,7 +84,7 @@ const SwamiSmarth = () => {
                     <div className="md:flex gap-8 items-start flex-row-reverse">
                         <div className="md:w-1/2 mb-8 md:mb-0">
                             <img
-                                src="https://avatars.mds.yandex.net/i?id=3e107e8a4cf5c69f0031644c013d2ffb5abe93e4-9083123-images-thumbs&n=13"
+                                    src="src\assets\scriptures\i (2).webp"
                                 alt="Family reconciliation"
                                 className="rounded-lg shadow-lg"
                             />

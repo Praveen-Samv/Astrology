@@ -724,7 +724,7 @@ const Scripturs: React.FC = () => {
             <div
                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center mb-12"
                 style={{
-                    backgroundImage: `url('https://i.pinimg.com/originals/2e/5d/90/2e5d90afa454a6da4d84c7fb7ec32595.jpg')`,
+                    backgroundImage: `url(src/assets/scriptures/2e5d90afa454a6da4d84c7fb7ec32595.jpg)`,
                 }}
             >
                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">

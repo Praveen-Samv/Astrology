@@ -123,7 +123,7 @@ const Contact: React.FC = () => {
             <div
                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center mb-12"
                 style={{
-                    backgroundImage: `url('https://avatars.mds.yandex.net/get-mpic/3913686/img_id896587762305902504.jpeg/orig')`,
+                    backgroundImage: `url('/src/assets/about/orig.webp')`,
                 }}
             >
                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">

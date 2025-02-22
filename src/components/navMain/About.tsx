@@ -384,7 +384,7 @@ const About: React.FC = () => {
             <div
                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center  mb-12"
                 style={{
-                    backgroundImage: `url('https://c.wallhere.com/photos/ff/9b/space_3D_galaxy_purple-1947191.jpg!d')`,
+                    backgroundImage: `url('src/assets/about/galaxy-141-6.webp')`,
                 }}
             >
                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">
@@ -412,7 +412,7 @@ const About: React.FC = () => {
                     {/* Image */}
                     <div className="md:w-1/2 flex justify-center">
                         <img
-                            src="https://i.ytimg.com/vi/p74eROQGwOI/maxresdefault.jpg"
+                            src="src/assets/about/maxresdefault.jpg"
                             alt="Lord Dattatreya"
                             className="rounded-lg shadow-lg w-full md:w-4/5 object-cover"
                         />
@@ -435,13 +435,14 @@ const About: React.FC = () => {
                 {/* Origin Section */}
                 <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 mb-20">
                     {/* Image */}
-                    <div className="md:w-1/2 flex justify-center">
-                        <img
-                            src="https://i.ytimg.com/vi/yLfYtt7zpV4/maxresdefault.jpg"
-                            alt="Origin of Lord Dattatreya"
-                            className="rounded-lg shadow-lg w-full md:w-4/5 object-cover"
-                        />
-                    </div>
+                    
+                        <div className="md:w-1/2 flex justify-center">
+                            <img
+                                src="src\assets\about\maxresdefault12.jpg"
+                                alt="Origin of Lord Dattatreya"
+                                className="rounded-lg shadow-lg w-full md:w-4/5 object-cover"
+                            />
+                        </div>
                     {/* Text Content */}
                     <div className="md:w-1/2 space-y-6 md:space-y-8">
                         <h2 className="text-2xl font-semibold text-gray-800">
@@ -539,7 +540,7 @@ const About: React.FC = () => {
                         {/* Image */}
                         <div className="md:w-1/2 flex justify-center">
                             <img
-                                src="https://i.ytimg.com/vi/v2S-tUJ95n4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVSgrMA8=&rs=AOn4CLBqTi4G0DTwpS4n9HtZCIUch9aM-g"
+                                src="src/assets/about/maxresdefault (1).jpg"
                                 alt="Importance of Lord Dattatreya"
                                 className="rounded-lg shadow-lg w-full md:w-4/5 object-cover"
                             />

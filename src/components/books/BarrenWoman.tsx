@@ -19,7 +19,7 @@ const BarrenWoman: React.FC = () => {
 
                 {/* Blog Image */}
                 <img
-                    src="https://m.media-amazon.com/images/M/MV5BNDYzMDNkZmYtNDJmMS00ZTJlLWE5NTAtMWY2NDcxOThmNzY0XkEyXkFqcGdeQXVyOTc5MDI5NjE@._V1_.jpg" // Replace with your image URL
+                        src="src\assets\scriptures\child.jpg" // Replace with your image URL
                     alt="Barren Woman Blessed with Children"
                     className="w-full h-64 object-cover rounded-lg mb-8"
                 />

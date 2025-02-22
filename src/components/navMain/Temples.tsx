@@ -443,7 +443,7 @@ const temples = [
     {
         name: "Ganagapur: The Abode of Lord Narasimha Saraswati",
         location: "Karnataka, India",
-        image: "https://i.ytimg.com/vi/x3hMuAF7tqg/maxresdefault.jpg",
+        image: "src/assets/temples/maxresdefault.jpg",
         significance: "Ganagapur is one of the most revered holy sites associated with Lord Narasimha Saraswati. It is home to the Sangam, the confluence of rivers Bhima and Amaraja, where devotees perform rituals and offer prayers.",
         highlights: [
             "The Audumbar Tree: A sacred tree believed to fulfill the wishes of devotees.",
@@ -456,7 +456,7 @@ const temples = [
     {
         name: "Akkalkot: The Shrine of Swami Samarth",
         location: "Maharashtra, India",
-        image: "https://i0.wp.com/www.re-thinkingthefuture.com/wp-content/uploads/2023/01/A9159-15-Places-to-Visit-in-Mount-Abu-for-Travelling-Architect-Image-33-1024x492.jpg",
+        image: "src/assets/temples/A9159-15-Places-to-Visit-in-Mount-Abu-for-Travelling-Architect-Image-33-1024x492.webp",
         significance: "Akkalkot is closely associated with Swami Samarth, the third incarnation of Lord Dattatreya. It is a popular pilgrimage site where devotees experience spiritual peace and witness miracles.",
         highlights: [
             "The Vatavruksha: A sacred banyan tree under which Swami Samarth meditated and blessed devotees.",
@@ -469,7 +469,7 @@ const temples = [
     {
         name: "Pithapuram: Birthplace of Sripada Srivallabha",
         location: "Andhra Pradesh, India",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Rear_View_of_Keshava_Temple_at_Somanathapura.jpg/1600px-Rear_View_of_Keshava_Temple_at_Somanathapura.jpg",
+        image: "src/assets/temples/Rear_View_of_Keshava_Temple_at_Somanathapura.jpg",
         significance: "Pithapuram is celebrated as the birthplace of Sripada Srivallabha, the first incarnation of Lord Dattatreya. The Sripada Srivallabha Mahasamsthanam temple is a spiritual haven for devotees seeking his blessings.",
         highlights: [
             "The Birthplace Shrine: A temple dedicated to Sripada, commemorating his divine incarnation.",
@@ -482,7 +482,7 @@ const temples = [
     {
         name: "Shirdi: The Land of Sai Baba",
         location: "Maharashtra, India",
-        image: "https://i.ytimg.com/vi/W9UTqdHxp_0/maxresdefault.jpg",
+        image: "src/assets/temples/maxresdefault (1).jpg",
         significance: "Shirdi is the sacred abode of Sai Baba, an incarnation of Lord Dattatreya who united people across religions with his teachings of love and selflessness.",
         highlights: [
             "The Samadhi Mandir: The resting place of Sai Baba.",
@@ -495,7 +495,7 @@ const temples = [
     {
         name: "Shegaon: The Divine Presence of Gajanan Maharaj",
         location: "Maharashtra, India",
-        image: "https://i.ytimg.com/vi/iyTtXoPUBO8/maxresdefault.jpg",
+        image: "src/assets/temples/maxresdefault (2).jpg",
         significance: "Shegaon is associated with Gajanan Maharaj, regarded as an incarnation of Lord Dattatreya. The Gajanan Maharaj Temple is known for its serene environment and spiritual vibrations.",
         highlights: [
             "Samadhi Shrine: A center of devotion and meditation.",
@@ -508,87 +508,6 @@ const temples = [
 ];
 
 
-// const Temples: React.FC = () => {
-//     return (
-//         <>
-//             <div
-//                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center mb-12"
-//                 style={{
-//                     backgroundImage: `url('https://repository-images.githubusercontent.com/257767091/ddd9f900-d40b-11ea-843b-d0e87ac035c6')`,
-//                 }}
-//             >
-//                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">
-//                     Temples and Holy Sites of Lord Dattatreya
-//                 </h1>
-//             </div>
-
-//             <div className="bg-gradient-to-br -mt-12 bg-yellow-50 to-[#FFFFFF] min-h-screen">
-//                 <div className="container mx-auto px-4 py-10 mt-12">
-//                     <p className="text-center text-gray-700 mb-8">
-//                         The temples and holy sites dedicated to Lord Dattatreya are sanctuaries of peace, devotion,
-//                         and spiritual awakening. These sacred places hold profound significance as they resonate with
-//                         the divine energy of Lord Datta and his incarnations. Pilgrims from across the world visit these
-//                         sites to seek blessings, meditate, and immerse themselves in the Guru’s grace.
-//                     </p>
-
-//                     <div className="space-y-8">
-//                         {temples.map((temple, index) => (
-//                             <div key={index} className="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
-//                                 <img
-//                                     src={temple.image}
-//                                     alt={temple.name}
-//                                     className="w-full md:w-1/3 h-64 object-cover rounded-md"
-//                                 />
-//                                 <div className="md:ml-6 mt-4 md:mt-0">
-//                                     <h2 className="text-2xl font-semibold">{temple.name}</h2>
-//                                     <p className="text-gray-600">{temple.location}</p>
-//                                     <p className="text-gray-700 mt-2 font-medium">Significance: {temple.significance}</p>
-//                                     <p className="italic text-gray-700 mt-2">{temple.keyHighlights}</p>
-//                                     <ul className="list-disc pl-5 mt-2 text-sm text-gray-700">
-//                                         {temple.highlights.map((point, i) => (
-//                                             <li key={i}>{point}</li>
-//                                         ))}
-//                                     </ul>
-
-//                                     {/* "Know More" Button moved to the right of the card */}
-//                                     <a
-//                                         href={temple.moreInfoUrl}
-//                                         target="_blank"
-//                                         rel="noopener noreferrer"
-//                                         className="text-blue-500 hover:text-blue-700 hover:underline mt-4 ml-auto inline-block transition duration-300 ease-in-out"
-//                                     >
-//                                         Know More
-//                                     </a>
-//                                 </div>
-//                             </div>
-//                         ))}
-//                     </div>
-
-//                     <div className="mt-10 text-center">
-//                         <h2 className="text-2xl font-bold mb-4">Why Visit These Holy Sites?</h2>
-//                         <ul className="list-disc text-left inline-block text-gray-700">
-//                             <li>Spiritual Awakening: Experience the divine energy and profound peace at these sacred locations.</li>
-//                             <li>Rituals and Practices: Participate in ancient rituals like Paduka Puja, Arati, and sacred baths at holy rivers.</li>
-//                             <li>Strengthen Faith: Witness the spiritual power and grace of Lord Dattatreya’s incarnations.</li>
-//                         </ul>
-//                     </div>
-
-//                     {/* Inspirational Quote Section */}
-//                     <div className="mt-16 text-center py-12 px-8">
-//                         <blockquote className="text-xl italic text-indigo-900">
-//                             "Every step taken toward a sacred site is a step closer to the divine."
-//                         </blockquote>
-//                     </div>
-//                 </div>
-//             </div>
-
-//             {/* Footer */}
-//             <div>
-//                 <Footer />
-//             </div>
-//         </>
-//     );
-// };
 
 const Temples: React.FC = () => {
     return (
@@ -596,7 +515,7 @@ const Temples: React.FC = () => {
             <div
                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center mb-12"
                 style={{
-                    backgroundImage: `url('https://repository-images.githubusercontent.com/257767091/ddd9f900-d40b-11ea-843b-d0e87ac035c6')`,
+                    backgroundImage: `url('src/assets/temples/ddd9f900-d40b-11ea-843b-d0e87ac035c6.jpg')`,
                 }}
             >
                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">

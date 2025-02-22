@@ -648,7 +648,7 @@ const incarnations = [
         era: "Early 14th century",
         message: "Detachment from material desires, unwavering devotion, and selfless service to others.",
         legacy: "Pithapuram remains a revered spiritual hub, and his life is immortalized in the 'Sripada Srivallabha Charitaamrutam'.",
-        image: "https://i.ytimg.com/vi/rAn2a__7JqI/maxresdefault.jpg"
+        image: "src/assets/incarnations/maxresdefault (2).jpg"
     },
     {
         name: "Narasimha Saraswati (1378 AD – 1458 AD)",
@@ -656,7 +656,7 @@ const incarnations = [
         era: "Late 14th to mid-15th century",
         message: "Faith in the Guru, adherence to Vedic traditions, and disciplined spiritual practices.",
         legacy: "His life and teachings are chronicled in 'Shri Guru Charitra', inspiring millions.",
-        image: "https://yt3.googleusercontent.com/ytc/AOPolaRa1q7QMN7V6p-P2s-mrCwlXIcASDhOf7MtSyVrxg=s900-c-k-c0x00ffffff-no-rj"
+        image: "src/assets/incarnations/unnamed.jpg"
     },
     {
         name: "Swami Samarth (19th Century)",
@@ -664,7 +664,7 @@ const incarnations = [
         era: "19th century",
         message: "Live simply, stay detached from materialism, and maintain faith in divine grace.",
         legacy: "Akkalkot has become a major pilgrimage site, where devotees flock to experience his presence and teachings.",
-        image: "https://yt3.googleusercontent.com/pvTApAcwpSbvskIeTZZB4zo0ytOdVgO-2VzmpaHj3tp6egw52mrX-9kalkW8NU6fzD3SXUI-BXI=s900-c-k-c0x00ffffff-no-rj"
+        image: "src/assets/incarnations/channels4_profile.jpg"
     },
     {
         name: "Manik Prabhu (1817 AD – 1865 AD)",
@@ -672,7 +672,7 @@ const incarnations = [
         era: "Early 19th century",
         message: "Equality, universal love, and selfless service to mankind.",
         legacy: "The Manik Prabhu Samsthan continues his mission of harmony and service.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/9/96/Manik_Prabhu_and_Sai_Baba.jpg"
+        image: "src/assets/incarnations/Manik_Prabhu_and_Sai_Baba.jpg"
     },
     {
         name: "Sai Baba of Shirdi (1838 AD – 1918 AD)",
@@ -680,7 +680,7 @@ const incarnations = [
         era: "19th to early 20th century",
         message: "'Sabka Malik Ek' (God is One), serve humanity, and surrender to divine will.",
         legacy: "Shirdi is among the most visited pilgrimage sites in the world.",
-        image: "https://i.ytimg.com/vi/R8m7VdNKhto/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gXygTMA8=&rs=AOn4CLDwE1VajItjwlMeXlOQgszjxq6EnA"
+        image: "src/assets/incarnations/maxresdefault.jpg"
     },
     {
         name: "Vasudevananda Saraswati (Tembye Swami) (1854 AD – 1914 AD)",
@@ -688,7 +688,7 @@ const incarnations = [
         era: "Late 19th to early 20th century",
         message: "Faith in the Guru and strict adherence to spiritual discipline.",
         legacy: "His teachings continue to inspire seekers of knowledge and enlightenment.",
-        image: "https://yt3.ggpht.com/ytc/AKedOLSflcop2cD1pdj9LjRLD8cOsFHXrin2e349V4Q2mw=s900-c-k-c0x00ffffff-no-rj"
+        image: "src/assets/incarnations/unnamed (1).jpg"
     },
     {
         name: "Gajanan Maharaj (Late 19th Century)",
@@ -696,7 +696,7 @@ const incarnations = [
         era: "Late 19th century",
         message: "Be humble, remain detached, and seek spiritual awakening through devotion.",
         legacy: "Shegaon has become a spiritual hub, drawing devotees seeking guidance and blessings.",
-        image: "https://yt3.googleusercontent.com/ytc/APkrFKamBFuRFeXt1F2kFTxadQX2FEWYt-HhAl6H9gkI8w=s900-c-k-c0x00ffffff-no-rj"
+        image: "src/assets/incarnations/unnamed (2).jpg"
     }
 ];
 
@@ -707,7 +707,7 @@ const Incarnations: React.FC = () => {
             <div
                 className="w-full h-28 mt-16 flex items-center justify-center bg-cover bg-center  mb-12"
                 style={{
-                    backgroundImage: `url('https://econet.ru/media/covers/13626/original.jpg?1433353664')`,
+                    backgroundImage: `url('src/assets/incarnations/original.jpg')`,
                 }}
             >
                 <h1 className="text-3xl md:text-4xl font-bold text-white text-center bg-opacity-50 p-4 rounded-lg">

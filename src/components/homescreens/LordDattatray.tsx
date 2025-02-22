@@ -136,10 +136,10 @@ const LordDattatray: React.FC = () => {
                 {/* Left Side: Title and Image */}
                 <div className="w-full md:w-1/2 text-center md:text-left">
                     <h1 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-800 mb-6">
-                        Welcome to Lord Dattatray
+                        Welcome to Lord Dattatreya
                     </h1>
                     <img
-                        src="https://i.ytimg.com/vi/sRdqS5nwUNY/maxresdefault.jpg"
+                        src="src\assets\contact\maxresdefault (1).jpg"
                         alt="Lord Dattatray"
                         className="rounded-lg shadow-lg w-full"
                     />

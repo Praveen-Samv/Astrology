@@ -25,21 +25,23 @@ import MiraculasFood from "./components/books/MiraculasFood";
 import TheLeelas from "./components/books/TheLeelas";
 import SwamiSmarth from "./components/books/SwamiSmarth";
 import Contact from "./components/navMain/Contact";
+import WhatsUp from "./components/others/WhatsUp";
 
 
 const App: React.FC = () => {
   return (
-    <Router>
-      {/* Navbar will always be visible */}
-      <div>
-        <Navbar />
-      </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="incarnations" element={<Incarnations />} />
-        <Route path="teachings" element={<Teachings />} />
-        <Route path="scripture" element={<Scripturs />} />
+    <>
+      <Router>
+        {/* Navbar will always be visible */}
+        <div>
+          <Navbar />
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="incarnations" element={<Incarnations />} />
+          <Route path="teachings" element={<Teachings />} />
+          <Route path="scripture" element={<Scripturs />} />
           <Route path="revival-story" element={<DeadChild />} />
           <Route path="washerman-story" element={<Washerman />} />
           <Route path="healing-story" element={<Blinddevoot />} />
@@ -53,13 +55,17 @@ const App: React.FC = () => {
           <Route path="leelas-story" element={<TheLeelas />} />
           <Route path="teachings-story" element={<SwamiSmarth />} />
 
-        <Route path="temples" element={<Temples />} />
-        <Route path="modern" element={<ModernTeaching />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
-      
-      
-    </Router>
+          <Route path="temples" element={<Temples />} />
+          <Route path="modern" element={<ModernTeaching />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
+
+
+      </Router>
+      <div>
+            <WhatsUp />
+      </div>
+    </>
   );
 };
 

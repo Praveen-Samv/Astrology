@@ -14,7 +14,7 @@ const MiraculasFood = () => {
                 </h1>
                 {/* Blog Image */}
                 <img
-                    src="https://sun9-13.userapi.com/impg/R9b6GTLEASFECx6NL7WhntNjHD5BxO2GHAGycg/6_r8YCtHjJ0.jpg?size=1280x720&quality=95&sign=c11bd16e25f5be1611f559bd1c24b182&c_uniq_tag=V3lXtHOobi_p0ciPpkEJSNxivavR0PHM1HsLlnIkrEI&type=album" // Replace with your image URL
+                        src="src\assets\scriptures\6_r8YCtHjJ0.jpg" // Replace with your image URL
                     alt="Liberation of a Brahma Rakshasa"
                     className="w-full h-64 object-cover rounded-lg mb-8"
                 />

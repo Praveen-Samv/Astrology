@@ -110,7 +110,7 @@ const RestoringTheDevotee = () => {
 
                 {/* Blog Image */}
                 <img
-                    src="https://akincana.net/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-21-at-10.38.22-PM.jpg" // Replace with your image URL
+                        src="src\assets\scriptures\WhatsApp-Image-2020-05-21-at-10.38.22-PM.webp" // Replace with your image URL
                     alt="Liberation of a Brahma Rakshasa"
                     className="w-full h-64 object-cover rounded-lg mb-8"
                 />
